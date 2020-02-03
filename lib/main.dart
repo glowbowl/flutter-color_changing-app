@@ -117,12 +117,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-        body: Center(
+        body: Container(
          child: GestureDetector(
           child: Container(
             color: changedColor,
+            width: double.infinity,
+            height: double.infinity,
             alignment: Alignment.center,
-            child: Text( 
+            child: new Text( 
               "Hey there!",
               style: Theme.of(context).textTheme.title.merge(TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 35)),
             ),
